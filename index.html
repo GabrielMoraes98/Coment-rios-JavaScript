@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando documentos com o DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>Posts de comentários</h1>
+    </div>
+    
+    
+    <article class="post">
+        <p><strong>Gabriel Moraes</strong> <span>@gabrielHD - 10 min</span> </p>
+        <p>Texto aleatório para exemplifcar uma postagem:
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam facilis expedita voluptas veniam laboriosam aliquid libero rerum, esse magnam tempora qui odit amet ad sapiente numquam reiciendis eligendi commodi deserunt?
+        </p>
+        <br>
+
+        <div class="comentarios">
+            <h3>Comentários:</h3>
+
+            <input type="text" name="novo-comentario" placeholder="Digite seu comentário"/>
+
+            <button onclick="adicionarComentario()"> Adcionar Comentário</button>
+            <br>
+
+            <div id="novos-comentarios"></div>
+        </div>
+    </article>
+    <script src="index.js"></script>
+</body>
+</html>
